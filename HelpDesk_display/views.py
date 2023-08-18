@@ -11,5 +11,9 @@ def about(request):
     return HttpResponse('<h1> About this page <h1>')
 
 
+def login(request):
+    return HttpResponse('<h1> Welcome to the login page <h1>')
+
+
 
 
