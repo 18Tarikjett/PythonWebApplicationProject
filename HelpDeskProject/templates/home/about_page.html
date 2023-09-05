@@ -2,7 +2,7 @@
 {%block content%}
     <body>{% for post in posts %}
         <h1>
-            About this page
+            {{ post.content }}
         </h1>
         {%endfor%}
     </body>

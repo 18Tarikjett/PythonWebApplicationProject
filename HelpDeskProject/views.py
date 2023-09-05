@@ -14,7 +14,13 @@ posts = [
     {
         'author': 'Tarik Ozturk',
         'title':'Criteria for the tickets.',
-        'content':'The criteria for the tickets are as follows: Minor - The least critical level, the problem is not very serious. Major - The problem needs to be solved as soon as possible. Critical - The problem is a top priority and must be immediately resolved.',
+        'content':
+        """
+        The criteria for the tickets are as follows: 
+            Minor - The least critical level, the problem is not very serious. 
+            Major - The problem needs to be solved as soon as possible. 
+            Critical - The problem is a top priority and must be immediately resolved.
+        """,
         'date_posted':'August 22nd 2023'
 
     }
@@ -36,8 +42,9 @@ def about(request):
 
 
 def login(request):
-    return render(request, 'login/login_page.html')
+    return render(request, 'Users/login.html')
     #return HttpResponse('<h1> Welcome to the login page <h1>')
+
 
 
 
