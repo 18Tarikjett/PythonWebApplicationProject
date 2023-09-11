@@ -43,7 +43,6 @@ def about(request):
 
 def login(request):
     return render(request, 'Users/login.html')
-    #return HttpResponse('<h1> Welcome to the login page <h1>')
 
 
 

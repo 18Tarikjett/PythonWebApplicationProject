@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'HelpDeskProject',
     'Users',
+    'Tickets',
     'crispy_forms',
     'crispy_bootstrap4',
     'django.contrib.admin',
@@ -124,8 +125,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+MEDIA_ROOT=BASE_DIR.joinpath('media')
+MEDIA_URL='/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+
 LOGIN_REDIRECT_URL = 'HelpDeskProject-home'
+LOGIN_URL='login'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
