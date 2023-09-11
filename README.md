@@ -7,5 +7,8 @@ Users can register, login and create, read and update tickets they raise for har
 
 It is highly recommended that you create a virtual environment for this project before activating or installing any dependencies, rather than doing system wide installations. 
 
+Your environment will need docker compose if you do not have it already, the installation guide for docker compose can be found here: https://docs.docker.com/compose/install/
+
+
 
 
