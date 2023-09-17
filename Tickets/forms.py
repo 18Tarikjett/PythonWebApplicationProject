@@ -14,7 +14,9 @@ critical_level = [
 class TicketCreationForm(forms.ModelForm):
      class Meta:
          model = Ticket
-         fields = [ 'TicketTitle','TicketProblem']
-    
+         fields = [ 'TicketTitle','TicketProblem','TicketStatus']
 
-
+class TicketUpdateForm(forms.ModelForm):
+     class Meta:
+          model = Ticket
+          fields = []
