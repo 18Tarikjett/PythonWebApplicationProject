@@ -3,15 +3,14 @@
 {% block content %}
     <h2>Current tickets in progress</h2>
       <u1>
-        {% for ticket in ticket_display %}
+        {% for ticket in tickets %}
         <li>
-            <strong>{{ ticket.TicketTitle }}</strong>
-            Problem description: {{ticket.TicketProblem}}<br>
-            Status: {{ticket.TicketStatus}}<br>
+            <strong>{{ ticket.Title }}</strong>
+            {{ticket.pk}}
+            Problem description: {{ticket.Problem}}<br>
+            Status: {{ticket.Status}}<br>
             Creation Date: {{ticket.TicketCreationDate}}<br>
+            <a href="{{ticket.pk}}/update/">Update</a>
         </li>
-        {% endfor %}
-      </u1>         
-
-
+        {% endfor %}     
 {% endblock content %}
